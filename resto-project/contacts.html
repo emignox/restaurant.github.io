@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>contacts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <style>
+      body{
+        background-color: black;
+      }
+    </style>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg  bg-transparent  ">
+        <div class="container-fluid">
+          <a href="index.html"><img src="https://static.vecteezy.com/system/resources/previews/014/971/638/original/food-logo-design-template-restaurant-free-png.png" alt="" width="100px" height="100px"></a>
+
+          <a class="navbar-brand fs-3 text-light" href="restaurant.html"> Coco Restaurant </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="entree.html">photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="contacts.html">contacts</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <nav class="navbar  bg-transparent  ">
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+    </header>
+
+    
+
+    <div class="container-fluid   col-sm-12 ">
+      <div class="row">
+          
+          <div class="col-md-6">
+            
+              <form>
+                  <div class="mb-3 mt-5  fs-3 text-light py-5">
+                      <label for="exampleInputEmail1" class="form-label border-dark">First name:</label>
+                      <input type="email" class="form-control border-black" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text"></div>
+                  </div>
+                  <div class="mb-3 text-light fs-3">
+                      <label for="exampleInputPassword1" class="border-dark form-label">Last name:</label>
+                      <input type="password" class="border-black form-control" id="exampleInputPassword1">
+                  </div>
+              </form>
+              
+              <!-- Secondo form -->
+              <form>
+                  <div class="mb-3 mt-5 fs-3 text-light">
+                      <label for="exampleInputEmail2" class=" border-black form-label">Email address:</label>
+                      <input type="email" class="form-control border-black" id="exampleInputEmail2" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text text-light ">We'll never share your email with anyone else.</div>
+                  </div>
+              </form>
+              
+              <!-- Dropdown list -->
+              <div class="form-floating mb-3  p-3 mt-5">
+                  <select class="form-select border-dark" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected>Choose an option</option>
+                      <option value="1">Complaint</option>
+                      <option value="2">Leave a comment</option>
+                      <option value="3">Make a reservation</option>
+                  </select>
+                  <label for="floatingSelect ">Choose one of the options</label>
+              </div>
+              
+              <!-- Text area -->
+              <div class="form-floating text-light fs-3  py-5 mt-5">
+                  <textarea class=" border-black form-control " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Add a comment</label>
+              </div>
+              
+              <!-- Button -->
+              <button type="button" class="btn btn-outline-success text-light mt-5 "onclick="mostraAlert()">click ici pour evoyer </button>
+          </div>
+          
+          <!-- Colonna per l'immagine -->
+          <div class="col-md-6 mt-4 col-sm-12  ">
+              <img src="https://images.unsplash.com/photo-1514510598074-b61124b84899?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJsYWNrJTIwdmVnZXRhYmxlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" class="img-fluid " alt="Immagine">
+          </div>
+      </div>
+  </div>
+  
+
+      
+
+    </main>
+
+    <footer class="mt-5 bg-success py-3">
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col  p-2 mt-5">
+                <a href="https://github.com/emignox"><i class=" text-black fab fa-github fa-2x"> git-hub</i></a>
+            </div>
+            <div class="col mt-5">
+                <a href="https://facebook.com"><i class="  text-black fab fa-facebook fa-2x"> facebook</i></a>
+            </div>
+            <div class="col mt-5">
+                <a href="https://instagram.com"><i class="text-black fab fa-instagram fa-2x">instagram </i></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+  
+    <script>
+      function mostraAlert() {
+        alert("le message a ete envoyé!");
+      }
+    </script>
+    
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
